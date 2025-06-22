@@ -1,0 +1,12 @@
+We need entity frameworkf for querying/updating the database. so use property as public.
+
+SQL Lite is cross-platform - compatible with any operating system.
+Entity framework is a bridge between database and class.
+Querying
+Change Tracking
+Saving
+Concurrency
+Transactions
+Caching
+Built-in conventions
+Migrations

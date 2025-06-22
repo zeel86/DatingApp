@@ -1,0 +1,59 @@
+dotnet -h
+dotnet new solution
+dir
+dotnet new webapi -o API
+dotnet solution add API
+Open folder in vscode.
+install dependencies c# extensions, c# dev kit, materia icon theme.
+shift+ctrl+p => select yes.
+cd API
+dotnet run ---run the project.
+dotnet dev-certs https --trust  --Successfully created and trusted a new HTTPS certificate.
+API > Entitie
+Entities > create class -AppUser.
+Prop => inside class.
+-------------------------------------------concepts
+API > Data
+Data > create class DataContext.
+API > console : dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+create DataContext Class.
+Open program.cs file => start connection between database and class.
+appsettings.Developement => add DB connection string.
+settings > private => Add "_" underscore -- automatic updation of private property name to _private.
+settings > search => this => uncheck
+
+nuget > dotnet.ef > get version based on dotnet version.
+Copy command > run in your project use exact verson should match with dotnet version.
+Tool 'dotnet-ef' (version '9.0.0') was successfully installed.
+
+we want to create migrations.
+API > Run command > dotnet ef migrations add InitialCreate -o Data/Migrations
+API > Data > Migrations > cs files showing
+
+API > dotnet ef database update --it shows updation logs in console.
+Extensions > sqllite > install
+Ctrl + P > add database > databaseApp.db file will shows up in file-tree.
+
+Sqllite explorer > Users > right click >  new Query (Insert)
+Write Sql command > Sql-lite file.
+Select > Right click > Run selected Query > close file.
+Sqllite explorer > Users > right click > show table
+
+API > Controllers > create class UserControllers
+--------------------------------------------------------------
+Create endpoints for our database changes via http protocol.
+We use IEnumerable -- only want to iterate. List provides more features that we doesn't need.
+
+Add/Register controllers via builder.Services.AddControllers(); before AddDbContext methods.
+Also add app.MapControllers(). Before running app.run();
+
+
+
+
+  
+
+
+
+ 
+
