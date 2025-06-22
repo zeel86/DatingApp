@@ -1,3 +1,4 @@
 {
-    "csharpextensions.privateMemberPrefix": "_"
+    "csharpextensions.privateMemberPrefix": "_",
+    "workbench.colorTheme": "Default Light Modern"
 }
