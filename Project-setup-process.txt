@@ -59,6 +59,31 @@ Commit all changes to staged stage to commit.
 Push to selection and provide credentials to push cahnges to remote repo.
 ----------------------------------------------------------------------------------------
 
+Create client - angular project
+Run "ng new client" command in Project folder.
+Add angular language service extension.
+Disable strict mode via settings.
+
+-------------------------------------------------------------------------------------------
+we write some http client code in appcomponent.
+Tested the get api. Got cors policy error.
+Added code in API/program.cs file for addcors and usecors via builder.services.
+
+----------------------------------------------------------------------------------------------
+
+we took ngx-bootstrap to avoid angular dom manipulation and javascript jsquery (DOM) conflict.
+Hence we avoided using bootstrap.
+ng add ngx-bootstrap 
+npm i font-awesome
+
+----------------------------------------------------------------------------------------------
+Navigate to students assests > generateTrustedSSL. Follow steps mentioned in that text file.
+Copy Server/server key file and paste into ssl folder created at client level.
+update options in serve script of angular.json file. Add ssl cerificate file paths.
+Restart the servers.
+Now our site is trusted and can be accessible on https:localhost:4200. 
+
+
  
 
 

@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyMethod()
               .AllowAnyHeader()
-              .WithOrigins("http://localhost:4200"); // Use http if Angular is not using https
+              .WithOrigins("https://localhost:4200"); // Use http if Angular is not using https
     });
 });
 
