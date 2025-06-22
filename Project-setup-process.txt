@@ -4,12 +4,12 @@ dir
 dotnet new webapi -o API
 dotnet solution add API
 Open folder in vscode.
-install dependencies c# extensions, c# dev kit, materia icon theme.
+install dependencies c# extensions, c# dev kit, material icon theme.
 shift+ctrl+p => select yes.
 cd API
 dotnet run ---run the project.
 dotnet dev-certs https --trust  --Successfully created and trusted a new HTTPS certificate.
-API > Entitie
+API > Entities
 Entities > create class -AppUser.
 Prop => inside class.
 -------------------------------------------concepts
@@ -47,6 +47,20 @@ We use IEnumerable -- only want to iterate. List provides more features that we 
 
 Add/Register controllers via builder.Services.AddControllers(); before AddDbContext methods.
 Also add app.MapControllers(). Before running app.run();
+
+----------------------------------------------------------------------------------------
+get git. Close project reopen it. Close cmd.
+Projects => git init
+dotnet new gitignore  --ignore bin/files.
+update gitignore file with appsetting.json ---beacuse it contains some confidential infos.
+
+git init in project.
+Commit all changes to staged stage to commit.
+Push to selection and provide credentials to push cahnges to remote repo.
+----------------------------------------------------------------------------------------
+
+ 
+
 
 
 

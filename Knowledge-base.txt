@@ -10,3 +10,18 @@ Transactions
 Caching
 Built-in conventions
 Migrations
+
+------------------------------------------------
+Our code for Controller endpoint is not scalable bacause code is synchrounous. We cannot invest all our thread for receiving response from api. If we have 100 users. all our thread will be busy serving those request. This way our applicable won't be scalable. We need to use aynchronous code in order we can pass our response waiting task to another thread. If any new user requests for a new task. it will handled by new thread. Rther than keeping single thread busy.
+Inmproves performance, improves scalability.
+
+public ActionResult<IEnumerable<AppUser>> GetUsers()
+        {
+            return _context.Users.ToList();
+        }
+
+public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
