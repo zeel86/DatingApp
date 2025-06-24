@@ -81,7 +81,47 @@ Navigate to students assests > generateTrustedSSL. Follow steps mentioned in tha
 Copy Server/server key file and paste into ssl folder created at client level.
 update options in serve script of angular.json file. Add ssl cerificate file paths.
 Restart the servers.
-Now our site is trusted and can be accessible on https:localhost:4200. 
+Now our site is trusted and can be accessible on https:localhost:4200.
+
+-------------------------------------------------------------------------------------------
+Password storing options
+plain text   -- worst way
+Hashing      -- 
+Hashing + salting the password
+
+Add entities passwordhash/passwordsalt.
+Close the process.
+API > cmd > Run command "dotnet ef migrations add UserPasswordAdded"
+API > CMD > dotnet ef database update
+Ctrl + p > ">sql open database". On left you will see sqllite explorer.
+Open that see user has two new coloumns/fields.
+
+-------------------------------------------------------------------------------------------
+Dry principle
+Created base-controller.
+-------------------------------------------------------------------------------------------
+SetUp the Postman with file from studentResources. To create a postman collection. make sure we are using same http protocol on which our app is listening.
+
+Create a accountsController.
+whenever we add controller we need to restart the application.
+
+Data Transfer Objects --Unwanted propertie removel/ flattning complex objects.
+create DataTransfer objects under DTOs folder under API.
+Update controller AccountController with DTOs.
+
+How to debug c# project in vsocode.
+Click in Debug option on left. Create a launch.json file.
+Add configuration: Attach to .NET Process. Launch c# project.
+Select .NET core attach from variables dropdown in debug section.
+
+
+
+
+
+
+
+
+ 
 
 
  
