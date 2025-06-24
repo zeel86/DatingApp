@@ -114,6 +114,31 @@ Click in Debug option on left. Create a launch.json file.
 Add configuration: Attach to .NET Process. Launch c# project.
 Select .NET core attach from variables dropdown in debug section.
 
+-----------------------------------------------------------------------------------------------------------
+JWT structure: Basically a string combined of..
+
+Dvided in three parts.
+1. header 2. Payload 3. Signature.
+
+No cookies required.
+Portable
+Performance -- o databse request to check if user is valid or not.
+
+We will create service for a token that we can inject into another class as dbcontext.
+Created a Interfaces folder. added implementation.
+Created Services => TokenService c# class file with ITokenService implemented with exact class defined in ITokenService.
+
+Write CreateToken method in tokenservice c# class with Iconfiguration injected.
+
+For key we need as package called system.identitymodel.tokens.jwt. get the latetst version of it.
+   <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" /> we will have in API.csproj file.
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 
