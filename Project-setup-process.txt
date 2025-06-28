@@ -132,8 +132,22 @@ Write CreateToken method in tokenservice c# class with Iconfiguration injected.
 
 For key we need as package called system.identitymodel.tokens.jwt. get the latetst version of it.
    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" /> we will have in API.csproj file.
------------------------------------------------------------------------------------------------------------
 
+In appsettings.json file add tokenKey paramter.
+Created a scoped service for Itoken service and token service in prgram.cs file.
+Add dependency injection into accountscontrooler class like dbcontext.
+Instead of passing parameters. use DTo and pass that.
+
+for Logic endpoint also create a Dto return username and token wrapped inside it. 
+Then test it in postman for login call in section 4.
+Also copy generated token string and paste it into jwt.io and decode it. and check the decoded header, payload and signature.
+-----------------------------------------------------------------------------------------------------------
+Adding authentication middleware.
+
+Press Ctrl+P => >Add nuget package => search microsoft.aspnetcore.authentication.jwtbearer. Get the lastest version.
+
+Add middleware in program.cs file.
+builder.services.addauthentication
 
 
 
