@@ -148,6 +148,34 @@ Press Ctrl+P => >Add nuget package => search microsoft.aspnetcore.authentication
 
 Add middleware in program.cs file.
 builder.services.addauthentication
+-----------------------------------------------------------------------------------------------------------
+Adding extenion methods.
+To houseKeep our code. separate it form program.cs file -- such as middle we use extensionMthods.
+
+Create a Extensions folder in API.
+It will be static class with IserviceCollection return type. Ctrl+alt+f for format the code.
+We extended IServiceCollection method via
+Select service => Ctr+shift+l changes all occurances.
+
+-----------------------------------------------------------------------------------------------------------
+Create a navbar in angular application
+cd client => ng g c nav --skip-tests --lint-fix
+Create nav and defined template form and define ngModel binding.
+
+Angular services writing for Http interceptors.
+Services are signleton. its created when application starts when user refreshes our browser.
+
+Used angular bootsrap component. Created shared module and imported dropdown module and declared that module in app.modul.ts in imports section.
+----------------------------------------------------------------------------------------------------
+Nowe, every time when i refreshes the state i need to retain the state of the application.
+Via signals right.....
+
+Observables...
+Observables are lazy. we need to subscribe to it. we can do pipe, map over a observable.
+That we cannot do with promise().
+
+
+
 
 
 
