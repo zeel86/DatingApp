@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Dating App</a>
+    <a class="navbar-brand" routerLink="/">Dating App</a>
     <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async; else loginForm">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a routerLink="/members" routerLinkActive="active" class="nav-link" href="#">Matches</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">List</a>
+            <a routerLink="/lists" routerLinkActive="active" class="nav-link" href="#">List</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Messages</a>
+            <a routerLink="/messages" routerLinkActive="active" class="nav-link" href="#">Messages</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#" (click)="logout()">Logout</a>
