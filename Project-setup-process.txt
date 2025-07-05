@@ -173,6 +173,18 @@ Via signals right.....
 Observables...
 Observables are lazy. we need to subscribe to it. we can do pipe, map over a observable.
 That we cannot do with promise().
+Automatically subscribes and unsubscribes to an observable via async in template.
+
+In accounts service i use observable instead of signal cause signal in 9.0 version doesn't exits.
+Now, on refresh user still sees the loggin status.
+
+Adding home page.  client => ng g c home --skip-tests
+Adding register page  client => ng g c register --skip-tests
+----------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
